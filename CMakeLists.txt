@@ -18,6 +18,9 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(brpc C CXX)
 
+# 生成文件compile_commands.json，包含所有编译单元所执行的指令
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 option(WITH_GLOG "With glog" OFF)
 option(WITH_MESALINK "With MesaLink" OFF)
 option(WITH_BORINGSSL "With BoringSSL" OFF)
